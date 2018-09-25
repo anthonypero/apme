@@ -1,0 +1,402 @@
+* {}
+
+// Slide Content In from left
+// Used on Header Content
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(500px);
+        opacity: 0;
+        filter: blur(10px);
+    }
+
+    50% {
+        filter: blur(3px);
+    }
+
+    100% {
+        transform: translate(0);
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+// SLIDE THINGS ON FROM THE right
+// Used on Social Media icn on header
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(-500px);
+        opacity: 0;
+        filter: blur(10px);
+    }
+
+    50% {
+        filter: blur(3px);
+    }
+
+    100% {
+        transform: translate(0);
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+// Scale UP text
+// Used on strong tags on header
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+        color: $white;
+    }
+
+    50% {
+        transform: scale(1.15);
+        color: $highlight;
+    }
+
+    100% {
+        transform: scale(1);
+        color: $white;
+    }
+}
+
+// Animate the clip angle of the background image
+
+@keyframes clipAngle {
+    0% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 55vh);
+    }
+
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
+    }
+}
+
+// Animate slide bars
+
+@keyframes slideBar {
+
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+
+}
+
+// Animate opacity
+
+@keyframes fadeInLetter {
+    0% {
+        color: $grey-light;
+    }
+
+    100% {
+        color: $grey;
+    }
+}
+
+// Animate circular slider
+
+@keyframes scoreCardDesign {
+
+    0% {
+        clip-path: polygon(
+            50% 100%,
+            50% 100%,
+            50% 100%,
+            50% 100%,
+            50% 50%,
+            50% 100%,
+            50% 100%
+        );
+    }
+
+    12.5% {
+        clip-path: polygon(
+            0% 100%,
+            0% 100%,
+            0% 100%,
+            0% 100%,
+            50% 50%,
+            50% 100%,
+            0% 100%
+        );
+    }
+
+    37.5% {
+        clip-path: polygon(
+            0% 0%,
+            0% 0%,
+            0% 0%,
+            0% 0%,
+            50% 50%,
+            50% 100%,
+            0% 100%
+        );
+    }
+
+    62.5% {
+        clip-path: polygon(
+            0% 0%,
+            100% 0%,
+            100% 0%,
+            100% 0%,
+            50% 50%,
+            50% 100%,
+            0% 100%
+        );
+    }
+
+    87.5% {
+        clip-path: polygon(
+            0% 0%,
+            100% 0%,
+            100% 100%,
+            100% 100%,
+            50% 50%,
+            50% 100%,
+            0% 100%
+        );
+    }
+
+    100% {
+        clip-path: polygon(
+            0% 0%,
+            100% 0%,
+            100% 100%,
+            65% 100%,
+            50% 50%,
+            50% 100%,
+            0% 100%);
+    }
+
+}
+
+@keyframes scoreCardCode {
+
+    0% {
+        clip-path: polygon(
+            50% 100%,
+            50% 100%,
+            50% 100%,
+            50% 100%,
+            50% 50%,
+            50% 100%,
+            50% 100%
+        );
+    }
+
+    12.5% {
+        clip-path: polygon(
+            0% 100%,
+            0% 100%,
+            0% 100%,
+            0% 100%,
+            50% 50%,
+            50% 100%,
+            0% 100%
+        );
+    }
+
+    37.5% {
+        clip-path: polygon(
+            0% 0%,
+            0% 0%,
+            0% 0%,
+            0% 0%,
+            50% 50%,
+            50% 100%,
+            0% 100%
+        );
+    }
+
+    62.5% {
+        clip-path: polygon(
+            0% 0%,
+            100% 0%,
+            100% 0%,
+            100% 0%,
+            50% 50%,
+            50% 100%,
+            0% 100%
+        );
+    }
+
+    87.5% {
+        clip-path: polygon(
+            0% 0%,
+            100% 0%,
+            100% 100%,
+            100% 100%,
+            50% 50%,
+            50% 100%,
+            0% 100%
+        );
+    }
+
+    100% {
+        clip-path: polygon(
+            0% 0%,
+            100% 0%,
+            100% 100%,
+            80% 100%,
+            50% 50%,
+            50% 100%,
+            0% 100%);
+    }
+
+}
+
+@keyframes scoreCardVideo {
+
+    0% {
+        clip-path: polygon(
+            50% 100%,
+            50% 100%,
+            50% 100%,
+            50% 100%,
+            50% 50%,
+            50% 100%,
+            50% 100%
+        );
+    }
+
+    12.5% {
+        clip-path: polygon(
+            0% 100%,
+            0% 100%,
+            0% 100%,
+            0% 100%,
+            50% 50%,
+            50% 100%,
+            0% 100%
+        );
+    }
+
+    37.5% {
+        clip-path: polygon(
+            0% 0%,
+            0% 0%,
+            0% 0%,
+            0% 0%,
+            50% 50%,
+            50% 100%,
+            0% 100%
+        );
+    }
+
+    62.5% {
+        clip-path: polygon(
+            0% 0%,
+            100% 0%,
+            100% 0%,
+            100% 0%,
+            50% 50%,
+            50% 100%,
+            0% 100%
+        );
+    }
+
+    87.5% {
+        clip-path: polygon(
+            0% 0%,
+            100% 0%,
+            100% 100%,
+            100% 100%,
+            50% 50%,
+            50% 100%,
+            0% 100%
+        );
+    }
+
+    100% {
+        clip-path: polygon(
+            0% 0%,
+            100% 0%,
+            100% 100%,
+            65% 100%,
+            50% 50%,
+            50% 100%,
+            0% 100%);
+    }
+
+}
+
+@keyframes scoreCardAudio {
+
+    0% {
+        clip-path: polygon(
+            50% 100%,
+            50% 100%,
+            50% 100%,
+            50% 100%,
+            50% 50%,
+            50% 100%,
+            50% 100%
+        );
+    }
+
+    12.5% {
+        clip-path: polygon(
+            0% 100%,
+            0% 100%,
+            0% 100%,
+            0% 100%,
+            50% 50%,
+            50% 100%,
+            0% 100%
+        );
+    }
+
+    37.5% {
+        clip-path: polygon(
+            0% 0%,
+            0% 0%,
+            0% 0%,
+            0% 0%,
+            50% 50%,
+            50% 100%,
+            0% 100%
+        );
+    }
+
+    62.5% {
+        clip-path: polygon(
+            0% 0%,
+            100% 0%,
+            100% 0%,
+            100% 0%,
+            50% 50%,
+            50% 100%,
+            0% 100%
+        );
+    }
+
+    87.5% {
+        clip-path: polygon(
+            0% 0%,
+            100% 0%,
+            100% 100%,
+            100% 100%,
+            50% 50%,
+            50% 100%,
+            0% 100%
+        );
+    }
+
+    100% {
+        clip-path: polygon(
+            0% 0%,
+            100% 0%,
+            100% 100%,
+            95% 100%,
+            50% 50%,
+            50% 100%,
+            0% 100%);
+    }
+
+}

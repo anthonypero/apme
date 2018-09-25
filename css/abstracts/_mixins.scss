@@ -1,0 +1,51 @@
+@mixin gridTesting {
+
+  background: red;
+  color: $white;
+  padding: 3rem;
+  margin-bottom: 3rem;
+
+}
+
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin clearFix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+// Media Query Manager
+
+
+@mixin respond($breakpoint) {
+
+    @if $breakpoint == tab-port {
+        @media (min-width: 600px) { @content };
+    }
+
+    @if $breakpoint == tab-land {
+        @media (min-width: 800px) { @content };
+    }
+
+    @if $breakpoint == tab-large {
+        @media (min-width: 1060px) { @content };
+    }
+
+    @if $breakpoint == laptop {
+        @media (min-width: 1260px) { @content };
+    }
+
+    @if $breakpoint == desktop-large {
+        @media (min-width: 1600px) { @content };
+    }
+
+}

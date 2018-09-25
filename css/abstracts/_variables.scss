@@ -1,0 +1,29 @@
+* {}
+
+// -------------------
+//    Margins
+// -------------------
+
+// $grid-width: 140rem;
+// $grid-width-laptop: 114rem;
+// $grid-width-tablet: 96rem;
+
+
+$gutter-width: 3.5rem;
+$gutter-height-large: 8rem;
+$gutter-height: 4rem;
+$gutter-height-small: 2rem;
+
+// ---------------
+//     Colors
+// ---------------
+
+$primary: #48768b;
+$primary-light: lighten($primary, 20%);
+$primary-dark: darken($primary, 20%);
+$highlight: #e69112;
+$white: #fff;
+$grey: #888;
+$grey-light: lighten($grey, 40%);
+$grey-dark: darken($grey, 35%);
+$black: #101617;

@@ -1,0 +1,64 @@
+title.featherlight-inner {
+    text-transform: uppercase;
+    padding: 1rem 3rem;
+    border: 1px solid darken($primary-dark, 15%);
+    background: $primary-dark;
+    color: $white;
+}
+
+.inside-modal {
+
+    a {
+        color: $highlight;
+        text-decoration: none;
+
+        &:hover {
+            color: darken($highlight, 15%);
+        }
+    }
+
+
+    &--screenshot {
+
+        padding: 4rem;
+        border: 1px solid;
+        margin: 4rem 0;
+
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &--meta {
+        margin-top: 8rem;
+        font-size: 2rem;
+        line-height: 3rem;
+
+        ul {
+            margin-left: 2.5rem;
+            list-style-type: circle;
+        }
+
+    }
+
+    &--header {
+
+        &__label {
+            text-transform: uppercase;
+            border-bottom: 1px solid;
+            font-size: 3rem;
+            margin-bottom: .5rem;
+            padding-bottom: .5rem;
+        }
+
+    }
+
+    &--label {
+        text-transform: uppercase;
+        border-bottom: 1px solid;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+    }
+
+}

@@ -1,0 +1,82 @@
+.contact-form {
+
+    .form-group {
+
+    }
+
+    label {
+        display: none;
+    }
+
+    input {
+        border: none;
+        width: 100%;
+        padding: 1rem 2rem;
+        font-size: 2.5rem;
+        margin-bottom: $gutter-height;
+        background-color: rgba($white, .5);
+        font-family: inherit;
+        display:block;
+        color: inherit;
+
+        &::-webkit-input-placeholder {
+            color: lighten($grey-dark, 15%);
+        }
+
+        &:focus {
+            background-color: rgba($white, 1);
+            outline: none;
+            border-left: .5rem solid $primary;
+            padding-left: 1.5rem;
+
+            &:invalid {
+                border-left: .5rem solid $highlight;
+            }
+        }
+    }
+
+    textarea {
+        border: none;
+        height: 30rem;
+        width: 100%;
+        padding: 1rem 2rem;
+        font-size: 2.5rem;
+        margin-bottom: $gutter-height;
+        background-color: rgba($white, .5);
+        font-family: inherit;
+        color: inherit;
+        display:block;
+
+        &::-webkit-input-placeholder {
+            color: lighten($grey-dark, 15%);
+        }
+
+        &:focus {
+            background-color: rgba($white, 1);
+            outline: none;
+            border-left: .5rem solid $primary;
+            padding-left: 1.5rem;
+
+            &:invalid {
+                border-left: .5rem solid $highlight;
+            }
+
+        }
+    }
+
+    .btn--clean {
+        background-color: transparent;
+        padding: 2rem 8rem;
+
+        &:hover {
+            background-color: rgba($highlight, .65);
+        }
+
+        &:active {
+            outline: none;
+            background-color: rgba($highlight, 1);
+        }
+    }
+
+
+}

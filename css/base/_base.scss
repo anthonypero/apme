@@ -1,0 +1,49 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 47.5%;
+}
+
+@include respond(tab-port) {
+    html {
+        font-size: 47.5%;
+    }
+}
+
+@include respond(tab-land) {
+    html {
+        font-size: 47.5%;
+    }
+}
+
+@include respond(tab-large) {
+    html {
+        font-size: 47.5%;
+    }
+}
+
+@include respond(laptop) {
+    html {
+        font-size: 47.5%;
+    }
+}
+
+@include respond(laptop) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@include respond(desktop-large) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+body {
+  font-size: 1.6rem;
+}

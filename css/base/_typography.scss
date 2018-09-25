@@ -1,0 +1,211 @@
+body {
+  font-size: 1.6rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.site-branding__info {
+
+  .greeting {
+    font-size: 4rem;
+    color: $white;
+  }
+
+  .lead {
+    font-size: 3.5rem;
+    color: $white;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 4.5rem;
+  }
+
+  .short-description {
+    color: $white;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: 1px;
+  }
+
+}
+
+.down-arrows {
+  font-size: 7rem;
+  color: $white;
+}
+
+.section {
+
+    .section--header {
+        font-size: 3.5rem;
+        @include respond(tab-port) {
+            font-size: 4.5rem;
+        }
+        @include respond(tab-large) {
+            font-size: 5.5rem;
+        }
+        border-bottom: 1px solid;
+        color: $black;
+        margin-bottom: $gutter-height-large;
+        padding-top: $gutter-height;
+    }
+
+    .lead {
+        font-size: 3.5rem;
+        letter-spacing: 1px;
+        font-weight: 300;
+        margin-bottom: $gutter-height-large;
+        line-height: 4.5rem;
+    }
+
+    a:link,
+    a:visited {
+        color: $highlight;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    a:hover {
+        border-bottom: 1px solid;
+    }
+
+    &--skills {
+
+    }
+
+    &--portfolio {
+
+        &__design {
+
+        }
+
+        &__video {
+
+        }
+
+        &__audio {
+
+        }
+    }
+
+    &--work-history {
+
+    }
+
+}
+
+
+
+.skillset--header {
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-top: $gutter-height;
+    text-align: center;
+}
+
+.section--skills {
+
+    .skill--title {
+        font-size: 2rem;
+        padding-left: 2.5rem;
+        margin-bottom: 1rem;
+        background-position: center left;
+        background-size: contain;
+        background-repeat: no-repeat;
+        line-height: 2rem;
+
+        &__html5 {
+            background-image: url(../icn/html5.png);
+        }
+
+        &__css3 {
+            background-image: url(../icn/css3.png);
+        }
+
+        &__php {
+            background-image: url(../icn/php.png);
+        }
+
+        &__drupal {
+            background-image: url(../icn/drupal.svg);
+        }
+
+        &__wp {
+            background-image: url(../icn/wordpress.png);
+        }
+
+        &__ps {
+            background-image: url(../icn/ps.svg);
+        }
+
+        &__ai {
+            background-image: url(../icn/ai.svg);
+        }
+
+        &__pr {
+            background-image: url(../icn/pr.svg);
+        }
+
+        &__post-audio {
+            background-image: url(../icn/au.svg);
+        }
+
+        &__ae {
+            background-image: url(../icn/ae.svg);
+        }
+
+        &__typography {
+            background-image: url(../icn/typography.png);
+        }
+
+        &__print {
+            background-image: url(../icn/print.png);
+        }
+
+        &__rwd {
+            background-image: url(../icn/rwd.png);
+        }
+
+        &__resolve {
+            background-image: url(../icn/resolve.png);
+        }
+
+        &__producing {
+            background-image: url(../icn/producing.png);
+        }
+
+        &__mixing {
+            background-image: url(../icn/mixing.png);
+        }
+
+        &__live {
+            background-image: url(../icn/live.png);
+        }
+
+        &__composition {
+            background-image: url(../icn/composition.png);
+        }
+
+        &__midi {
+            background-image: url(../icn/midi.png);
+        }
+
+        &__camera {
+            background-image: url(../icn/camera.png);
+        }
+    }
+
+}
+
+.section--portfolio__design,
+.section--portfolio__audio {
+
+    color: $white;
+
+    .section--header {
+        color: $white;
+    }
+
+    .lead {
+        color: $white;
+    }
+}

@@ -1,0 +1,86 @@
+* {}
+
+// Design and Development portfolio
+
+.section--portfolio__audio {
+    background-color: $primary-light;
+    clip-path: polygon(0 0, 100% 10rem, 100% 100%, 0 100%);
+    padding-bottom: 15rem;
+    padding-top: 10rem;
+    margin-top: -10rem;
+
+    @include respond(laptop) {
+        clip-path: polygon(0 0, 100% 10rem, 100% 100%, 0 100%);
+        padding-bottom: 15rem;
+        padding-top: 10rem;
+        margin-top: -10rem;
+    }
+
+    @include respond(desktop-large) {
+        clip-path: polygon(0 0, 100% 20rem, 100% 100%, 0 100%);
+        padding-bottom: 30rem;
+        padding-top: 20rem;
+        margin-top: -20rem;
+    }
+
+    div.row {
+        padding: 4rem;
+        background: rgba($black, .5);
+    }
+
+    .row--audio:not(:last-of-type) {
+        margin-bottom: 4rem;
+    }
+
+    .audio--meta {
+
+        text-align: center;
+
+        &__title {
+            border-bottom: 1px solid rgba($white, .3);
+            font-size:2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding-bottom: .75rem;
+            margin-bottom: .75rem;
+        }
+
+        &__category {
+            border-bottom: 1px solid rgba($white, .3);
+            padding-bottom: .75rem;
+            margin-bottom: .75rem;
+            font-size: 2rem;
+            font-weight: 300;
+        }
+
+        &__details {
+            font-size: 1.7rem;
+            font-weight: 100;
+            padding: 0 1rem;
+            letter-spacing: 1px;
+        }
+    }
+
+    .audio--file {
+        margin-top: 3rem;
+
+        .description {
+            display: none;
+        }
+    }
+
+    .col-1-of-3 {
+        margin-right:0px !important;
+        
+        @include respond(tab-land) {
+            padding-right: $gutter-width;
+        }
+    }
+
+    .audio--file__download {
+        padding-top: 1rem;
+        text-align: right;
+    }
+
+
+}

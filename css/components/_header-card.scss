@@ -1,0 +1,48 @@
+.site-branding__card {
+    background: $white;
+    text-align: center;
+    box-shadow: 0 0 1.5rem rgba($black,.2);
+    animation-name: slideInLeft;
+    animation-duration: .7s;
+    animation-timing-function: cubic-bezier(.24,1.38,.58,.99);
+    animation-delay: .3s;
+    animation-fill-mode: both;
+    backface-visibility: hidden;
+    z-index: 100;
+    padding: 1.5rem;
+    width: 300px;
+    display: inline-block;
+    margin-top: 4rem;
+    margin-bottom: 200px;
+    @include respond(tab-land) { margin-left: 4rem; margin-right: 4rem; }
+
+    @include respond(tab-land) {
+        padding: 2.5rem;
+        width: inherit;
+        display: block;
+        margin: 0;
+        margin-bottom: 0;
+    }
+
+    .card-subtitle {
+        background: $primary-dark;
+        color: $white;
+        text-transform: uppercase;
+        padding: 2rem 2rem;
+        margin-top: 2.5rem;
+        font-weight: 200;
+        letter-spacing: 1px;
+    }
+
+    .card-title {
+        font-weight: 300;
+        color: $grey-dark;
+    }
+
+    .card-image {
+        width: 100%;
+        -webkit-filter: grayscale(15%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(15%);
+        margin-bottom: 2.5rem;
+    }
+}

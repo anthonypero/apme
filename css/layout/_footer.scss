@@ -1,0 +1,27 @@
+* {}
+
+// Design and Development portfolio
+
+.site-footer {
+    background-color: $primary-dark;
+    clip-path: polygon(0 0, 100% 5rem, 100% 100%, 0 100%);
+    padding-top: 2.5vh;
+
+    @include respond(laptop) {
+        clip-path: polygon(0 0, 100% 10rem, 100% 100%, 0 100%);
+        padding-top: 5vh;
+    }
+
+    @include respond(desktop-large) {
+        clip-path: polygon(0 0, 100% 20rem, 100% 100%, 0 100%);
+        padding-top: 15vh;
+    }
+
+
+    min-height: inherit;
+    padding-bottom: $gutter-height-large;
+
+    .section--header {
+        color: white;
+    }
+}

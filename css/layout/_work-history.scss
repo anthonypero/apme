@@ -1,0 +1,106 @@
+.section--work-history {
+
+    background-color: $grey-light;
+    clip-path: polygon(0 0, 100% 10rem, 100% 100%, 0 100%);
+    padding-bottom: 5rem;
+    padding-top: 10rem;
+    margin-top: -10rem;
+
+    @include respond(laptop) {
+        clip-path: polygon(0 0, 100% 10rem, 100% 100%, 0 100%);
+        padding-bottom: 5rem;
+        padding-top: 10rem;
+        margin-top: -10rem;
+    }
+
+    @include respond(desktop-large) {
+        clip-path: polygon(0 0, 100% 20rem, 100% 100%, 0 100%);
+        padding-bottom: 10rem;
+        padding-top: 20rem;
+        margin-top: -20rem;
+    }
+
+    .job--description {
+
+        @include respond(tab-land) {
+            border-left: 2px solid lighten($grey, 25%);
+            padding-left: $gutter-width;
+        }
+
+        font-size: 2.2rem;
+        line-height: 3.5rem;
+
+        h4 {
+            text-transform: uppercase;
+            margin: 2rem 0;
+        }
+
+        ul,ol {
+            list-style-position: outside;
+            line-height:2.5rem;
+            margin-left: 4rem;
+
+            li {
+                padding-bottom: 1rem;
+            }
+        }
+    }
+
+    .job--description__wrapper {
+        background-color: $white;
+        padding: $gutter-height 5rem;
+    }
+
+    .job--meta {
+        text-align: left;
+        position: relative;
+        margin-bottom: $gutter-height;
+        margin-top: $gutter-height;
+    }
+
+    @include respond(tab-land) {
+        .job--meta {
+            text-align: right;
+        }
+    }
+
+    .timeline {
+
+        @include respond(tab-land) {
+            &--stamp {
+                width: 1.2rem;
+                height: 1.2rem;
+                border-radius: 50%;
+                position: absolute;
+                background-color: $highlight;
+                top: 5px;
+                right: -3.85rem;
+                transform: translateX(22%);
+                box-shadow: 0 0 0 7px $grey-light;
+            }
+        }
+
+        &--year,
+        &--position,
+        &--location {
+            font-size: 2rem;
+            font-weight: normal;
+            color: $grey;
+        }
+
+        &--company {
+            font-size: 3rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin: 1rem 0;
+        }
+
+    }
+
+    @include respond(tab-land) {
+        .job--meta {
+            margin-right: calc(#{$gutter-width} - 1px) !important;
+        }
+    }
+
+}

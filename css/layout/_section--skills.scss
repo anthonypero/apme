@@ -1,0 +1,266 @@
+.section--skills {
+
+    padding-bottom: 20rem;
+
+    .col {
+        margin-bottom: $gutter-height-large;
+    }
+
+    .row:not(:last-of-type) {
+        margin-bottom: $gutter-height-large;
+    }
+
+    & .skillset--icon {
+
+        height: 150px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        overflow:hidden;
+        background-size: contain;
+
+        &__code {
+            background-image: url(../icn/code.svg);
+
+        }
+
+        &__design {
+            background-image: url(../icn/design.svg);
+        }
+
+        &__video {
+            background-image: url(../icn/video.svg);
+        }
+
+        &__audio {
+            background-image: url(../icn/audio.svg);
+        }
+    }
+
+    &__skillset {
+        padding: 0px 7%;
+    }
+
+    .skill {
+        margin-top: $gutter-height-small;
+    }
+
+    .skillbar--empty {
+
+        height: 1.5em;
+        background: darken($grey-light, 10%);
+        border: 1px solid $grey;
+        text-align: center;
+        position: relative;
+        overflow: hidden;;
+
+        .skillbar--full {
+            background: $highlight;
+            height: 100%;
+        }
+
+        .skillbar--percentage {
+            position: absolute;
+            top:0px;
+            left: 49%;
+        }
+    }
+
+    .skillset--grade {
+        height: 30rem;
+        width: 30rem;
+        margin: $gutter-height-large auto 0;
+        position: relative;
+        font-weight: 800;
+
+        &__bg {
+            background: darken($grey-light, 10%);
+            height: 30rem;
+            width: 30rem;
+            border-radius: 50%;
+        }
+
+        &__score {
+            background: $primary-light;
+            height: 30rem;
+            width: 30rem;
+            border-radius: 50%;
+            position: absolute;
+            top:0px;
+            left: 0px;
+        }
+
+        &__letter {
+            background: $grey-light;
+            height: 27rem;
+            width: 27rem;
+            padding: 4rem 0 0 0rem;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 17rem;
+            color: $grey;
+            letter-spacing: -.8rem;
+            line-height: 1em;
+            font-weight: 600;
+            @include absCenter;
+
+            &__code,
+            &__audio {
+                padding: 4rem 0 0 3.5rem;
+            }
+
+        }
+
+
+    }
+
+    .animation-element.in-view {
+        .skillbar--full {
+            animation: slideBar .7s ease-out;
+            animation-fill-mode: both;
+
+            &__ps {
+                animation-delay: .1s;
+            }
+
+            &__ai {
+                animation-delay: .2s;
+            }
+
+            &__rwd {
+                animation-delay: .3s;
+            }
+
+            &__print {
+                animation-delay: .4s;
+            }
+
+            &__typography {
+                animation-delay: .5s;
+            }
+
+            &__html5 {
+                animation-delay: .6s;
+            }
+
+            &__css3 {
+                animation-delay: .7s;
+            }
+
+            &__php {
+                animation-delay: .8s;
+            }
+
+            &__drupal {
+                animation-delay: .9s;
+            }
+
+            &__wp {
+                animation-delay: 1s;
+            }
+
+            &__pr {
+                animation-delay: .1s;
+            }
+
+            &__ae {
+                animation-delay: .2s;
+            }
+
+            &__resolve {
+                animation-delay: .3s;
+            }
+
+            &__camera {
+                animation-delay: .4s;
+            }
+
+            &__post-audio {
+                animation-delay: .5s;
+            }
+
+            &__producing {
+                animation-delay: .6s;
+            }
+
+            &__mixing {
+                animation-delay: .7s;
+            }
+
+            &__live {
+                animation-delay: .8s;
+            }
+
+            &__composition {
+                animation-delay: .9s;
+            }
+
+            &__midi {
+                animation-delay: 1s;
+            }
+        }
+
+        .skillset--grade {
+
+            &__score {
+
+                &__design {
+                    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 65% 100%, 50% 50%, 50% 100%, 0% 100%);
+                    animation: scoreCardDesign 1s linear;
+                    animation-fill-mode: both;
+                    animation-delay: .6s;
+                }
+
+                &__code {
+                    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 80% 100%, 50% 50%, 50% 100%, 0% 100%);
+                    animation: scoreCardCode 1s linear;
+                    animation-fill-mode: both;
+                    animation-delay: 1.1s;
+                }
+
+                &__video {
+                    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 65% 100%, 50% 50%, 50% 100%, 0% 100%);
+                    animation: scoreCardVideo 1s linear;
+                    animation-fill-mode: both;
+                    animation-delay: .6s;
+                }
+
+                &__audio {
+                    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 95% 100%, 50% 50%, 50% 100%, 0% 100%);
+                    animation: scoreCardAudio 1s linear;
+                    animation-fill-mode: both;
+                    animation-delay: 1.1s;
+                }
+            }
+
+            &__letter {
+
+                &__design {
+                    animation: fadeInLetter 1s linear;
+                    animation-fill-mode: both;
+                    animation-delay: .6s;
+                }
+
+                &__code {
+                    animation: fadeInLetter 1s linear;
+                    animation-fill-mode: both;
+                    animation-delay: 1.1s;
+                }
+
+                &__video {
+                    animation: fadeInLetter 1s linear;
+                    animation-fill-mode: both;
+                    animation-delay: .6s;
+                }
+
+                &__audio {
+                    animation: fadeInLetter 1s linear;
+                    animation-fill-mode: both;
+                    animation-delay: 1.1s;
+                }
+
+            }
+        }
+    }
+
+
+}
